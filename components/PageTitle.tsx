@@ -10,6 +10,7 @@ const events: Event[] = [
   { title: 'meet up', color: 'text-rose-400' },
   { title: 'super event', color: 'text-blue-600' },
   { title: 'seminář', color: 'text-purple-600' },
+  { title: 'workshop', color: 'text-orange-700' },
 ];
 
 function PageTitle() {

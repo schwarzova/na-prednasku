@@ -3,7 +3,7 @@ import React from 'react';
 import { Category, FilterSettings, Location } from '../../types';
 import BoolButton from './BoolButton';
 import { categoryOptions, locationOptions, months } from './consts';
-import SearchInput from './SearchIput';
+import SearchInput from './SearchInput';
 
 import Select from './Select';
 
@@ -58,7 +58,7 @@ function Filters(props: Props) {
   }
 
   return (
-    <div className="py-10 flex flex-wrap">
+    <div className="py-5 flex flex-wrap sm:py-10">
       <Select
         placeholder="# Kategorie"
         options={categoryOptions}
