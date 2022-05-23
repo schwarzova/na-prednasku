@@ -9,19 +9,19 @@ export const defaultFilter: FilterSettings = {
 };
 
 export const categoryOptions: Category[] = [
-  'business',
-  'nft',
   'ai',
-  'osobní rozvoj',
-  'krypto',
-  'tech',
-  'marketing',
+  'blockchain',
+  'business',
+  'data',
   'finance',
   'investice',
-  'programování',
+  'krypto',
   'management',
-  'blockchain',
-  'data',
+  'marketing',
+  'nft',
+  'osobní rozvoj',
+  'programování',
+  'tech',
 ];
 
 export const locationOptions: Location[] = [
@@ -32,8 +32,8 @@ export const locationOptions: Location[] = [
   'Plzeň',
   'Liberec',
   'Olomouc',
-  'České Budějovice',
-  'Hradec Králové',
+  'Č. Budějovice',
+  'H. Králové',
 ];
 
 export const months = [

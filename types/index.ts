@@ -13,19 +13,19 @@ export type Lecture = {
 };
 
 export type Category =
-  | 'business'
-  | 'nft'
   | 'ai'
-  | 'osobní rozvoj'
-  | 'krypto'
-  | 'tech'
-  | 'marketing'
+  | 'blockchain'
+  | 'business'
+  | 'data'
   | 'finance'
   | 'investice'
-  | 'programování'
+  | 'krypto'
+  | 'marketing'
   | 'management'
-  | 'blockchain'
-  | 'data';
+  | 'nft'
+  | 'osobní rozvoj'
+  | 'programování'
+  | 'tech';
 
 export type Location =
   | 'Online'
@@ -35,8 +35,8 @@ export type Location =
   | 'Plzeň'
   | 'Liberec'
   | 'Olomouc'
-  | 'České Budějovice'
-  | 'Hradec Králové';
+  | 'Č. Budějovice'
+  | 'H. Králové';
 
 export type FilterSettings = {
   category?: Category;

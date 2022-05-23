@@ -82,7 +82,7 @@ function Main(props: Props) {
   }, 400);
 
   return (
-    <main className="px-20 pt-5 pb-20 bg-nabifli-black min-h-[calc(100%_-_64px_-_24px)]">
+    <main className="px-5 pt-5 pb-20 bg-nabifli-black min-h-[calc(100%_-_64px_-_24px)] lg:px-20 sm:px-10">
       <PageTitle />
       <Filters
         filter={filter}
