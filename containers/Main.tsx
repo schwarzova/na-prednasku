@@ -82,7 +82,7 @@ function Main(props: Props) {
   }, 400);
 
   return (
-    <main className="px-5 pt-5 pb-20 bg-nabifli-black min-h-[calc(100%_-_64px_-_24px)] lg:px-20 sm:px-10">
+    <main className="px-4 pt-5 pb-20 bg-nabifli-black min-h-[calc(100%_-_64px_-_24px)] lg:px-20 sm:px-10">
       <PageTitle />
       <Filters
         filter={filter}
@@ -93,7 +93,7 @@ function Main(props: Props) {
       {finalLectures.length === 0 ? (
         <NoDataAlert />
       ) : (
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 sm:gap-6">
           {finalLectures.map((l) => (
             <Lecture key={l.id} lecture={l} />
           ))}

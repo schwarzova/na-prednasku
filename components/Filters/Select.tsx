@@ -1,23 +1,22 @@
 import React from 'react';
+import BoolButton from './BoolButton';
 
 type Props = {
   onSelect: (option?: string, index?: number) => void;
   options: string[];
   placeholder: string;
   selectedOption?: string;
+  minWidth: string;
 };
 
 function Select(props: Props) {
   return props.selectedOption ? (
-    <div className="py-1.5 px-5 mr-2 mb-2 w-fit bg-gradient-to-r from-indigo-700 to-red-500 rounded-full text-white flex justify-between">
-      {props.selectedOption}
-      <button
-        className="ml-2 hover:text-black"
-        onClick={() => props.onSelect(undefined)}
-      >
-        &#10006;
-      </button>
-    </div>
+    <BoolButton
+      isSelected
+      onClick={() => props.onSelect(undefined)}
+      title={props.selectedOption}
+      minWidth={props.minWidth}
+    />
   ) : (
     <select
       onChange={(e) => props.onSelect(e.target.value, e.target.selectedIndex)}

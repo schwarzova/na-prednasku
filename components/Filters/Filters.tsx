@@ -58,18 +58,20 @@ function Filters(props: Props) {
   }
 
   return (
-    <div className="py-5 flex flex-wrap sm:py-10">
+    <div className="py-3 flex flex-wrap sm:py-10">
       <Select
         placeholder="# Kategorie"
         options={categoryOptions}
         onSelect={handleCategorySelect}
         selectedOption={props.filter.category}
+        minWidth={'min-w-[124px]'}
       />
       <Select
         placeholder="🌍 Kde"
         options={locationOptions}
         onSelect={handleLocationSelect}
         selectedOption={props.filter.location}
+        minWidth={'min-w-[123.5px]'}
       />
       <Select
         placeholder="🗓 Kdy"
@@ -78,6 +80,7 @@ function Filters(props: Props) {
         selectedOption={
           props.filter.month ? months[props.filter.month - 1] : undefined
         }
+        minWidth={'min-w-[93.5px]'}
       />
       <BoolButton
         title="💰 Zdarma"

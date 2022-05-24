@@ -10,7 +10,7 @@ type Props = {
 
 function Title(props: Props) {
   return (
-    <div className="p-3 text-2xl bg-nabifli-black-card-top rounded-tl-lg rounded-tr-lg text-white flex justify-between">
+    <div className="p-2 text-2xl bg-nabifli-black-card-top rounded-tl-lg rounded-tr-lg text-white flex justify-between sm:p-3">
       {props.title}
       <div className="flex">
         {props.isOnline && (
