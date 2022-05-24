@@ -2,6 +2,7 @@ import React from 'react';
 import BoolButton from './BoolButton';
 
 type Props = {
+  icon: string;
   onSelect: (option?: string, index?: number) => void;
   options: string[];
   placeholder: string;
@@ -14,7 +15,7 @@ function Select(props: Props) {
     <BoolButton
       isSelected
       onClick={() => props.onSelect(undefined)}
-      title={props.selectedOption}
+      title={`${props.icon} ${props.selectedOption}`}
       minWidth={props.minWidth}
     />
   ) : (
@@ -28,10 +29,9 @@ function Select(props: Props) {
                   mr-2 mb-2
                   focus:text-white focus:bg-nabifli-black-card focus:border-blue-600 focus:outline-none"
       aria-label="Default select example"
+      defaultValue={props.placeholder}
     >
-      <option selected disabled>
-        {props.placeholder}
-      </option>
+      <option disabled>{props.placeholder}</option>
       {props.options.map((o) => (
         <option key={o} value={o}>
           {o}

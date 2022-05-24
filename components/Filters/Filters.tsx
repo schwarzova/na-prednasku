@@ -60,6 +60,7 @@ function Filters(props: Props) {
   return (
     <div className="py-3 flex flex-wrap sm:py-10">
       <Select
+        icon="#"
         placeholder="# Kategorie"
         options={categoryOptions}
         onSelect={handleCategorySelect}
@@ -67,6 +68,7 @@ function Filters(props: Props) {
         minWidth={'min-w-[124px]'}
       />
       <Select
+        icon="🌍"
         placeholder="🌍 Kde"
         options={locationOptions}
         onSelect={handleLocationSelect}
@@ -74,6 +76,7 @@ function Filters(props: Props) {
         minWidth={'min-w-[123.5px]'}
       />
       <Select
+        icon="🗓"
         placeholder="🗓 Kdy"
         options={months}
         onSelect={handleMonthSelect}
