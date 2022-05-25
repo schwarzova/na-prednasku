@@ -58,7 +58,7 @@ function Filters(props: Props) {
   }
 
   return (
-    <div className="py-3 flex flex-wrap sm:py-10">
+    <div className="py-3 flex flex-wrap sm:py-5 2xl:py-10">
       <Select
         icon="#"
         placeholder="# Kategorie"
