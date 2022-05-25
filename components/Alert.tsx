@@ -1,12 +1,14 @@
 import React from 'react';
 
 type Props = {
-  color: string;
+  type: 'success' | 'danger';
   text: string;
 };
 
 function Alert(props: Props) {
-  const colors = `bg-${props.color}-100 border-${props.color}-500 text-${props.color}-700`;
+  const colorsSuccess = 'bg-green-100 border-green-500 text-green-700';
+  const colorsDanger = `bg-red-100 border-red-500 text-red-700`;
+  const colors = props.type === 'success' ? colorsSuccess : colorsDanger;
 
   return (
     <div

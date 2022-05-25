@@ -60,14 +60,14 @@ function Menu() {
       )}
       {isAlertOpen && (
         <Alert
-          color="green"
+          type="success"
           text="Vaše událost byla vytvořena a poslána k nám na kontrolu 👍"
         />
       )}
       {isErrorAlertOpen && (
         <Alert
-          color="red"
-          text="Něco se pokazilo, Vaše událost se nepodařilo odeslat 👎"
+          type="danger"
+          text="Něco se pokazilo, Vaší událost se nepodařilo odeslat 👎"
         />
       )}
     </>
