@@ -20,7 +20,7 @@ function Lecture(props: Props) {
       className={`flex flex-col bg-nabifli-black-card rounded-lg drop-shadow-md ${propagatedRing}`}
     >
       <Title
-        isOnline={props.lecture.isOnline}
+        isOnline={props.lecture.isOnline || props.lecture.location === 'Online'}
         isPropagated={props.lecture.isPropagated}
         title={props.lecture.title}
       />

@@ -15,7 +15,7 @@ function BoolButton(props: Props) {
 
   return (
     <button
-      className={`py-1.5 px-3 mr-2 mb-2 bg-gradient-to-r ${selectedClass} ${minWidth} rounded-full text-white text-left`}
+      className={`py-1.5 px-3 mr-2 mb-2 bg-gradient-to-r ${selectedClass} ${minWidth} rounded-full text-white text-left focus:outline outline-offset-2 outline-1 outline-purple-600`}
       onClick={props.onClick}
     >
       {props.title}

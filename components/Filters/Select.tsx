@@ -27,7 +27,7 @@ function Select(props: Props) {
                   transition
                   ease-in-out
                   mr-2 mb-2
-                  focus:text-white focus:bg-nabifli-black-card focus:border-blue-600 focus:outline-none"
+                  focus:text-white focus:bg-nabifli-black-card focus:border-blue-600 focus:outline outline-offset-2 outline-1 outline-purple-600"
       aria-label="Default select example"
       defaultValue={props.placeholder}
     >

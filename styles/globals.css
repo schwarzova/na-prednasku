@@ -27,3 +27,24 @@ h1 {
 #__next {
   height: 100%;
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #1E202F;
+  border-left: 1px solid #27253E;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #27253E;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #27253E;
+}
