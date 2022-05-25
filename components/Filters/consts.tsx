@@ -13,14 +13,17 @@ export const categoryOptions: Category[] = [
   'blockchain',
   'business',
   'data',
+  'e-commerce',
   'finance',
   'investice',
   'krypto',
   'management',
   'marketing',
+  'meta',
   'nft',
   'osobní rozvoj',
   'programování',
+  'sales',
   'tech',
 ];
 

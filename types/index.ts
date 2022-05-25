@@ -17,14 +17,17 @@ export type Category =
   | 'blockchain'
   | 'business'
   | 'data'
+  | 'e-commerce'
   | 'finance'
   | 'investice'
   | 'krypto'
   | 'marketing'
   | 'management'
+  | 'meta'
   | 'nft'
   | 'osobní rozvoj'
   | 'programování'
+  | 'sales'
   | 'tech';
 
 export type Location =
