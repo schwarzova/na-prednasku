@@ -83,7 +83,7 @@ function CreateModal(props: Props) {
           >
             <Header />
 
-            <div className="bg-nabifli-black px-4 py-3">
+            <div className="bg-nabifli-black px-2 py-3 sm:px-4">
               <form>
                 <Input
                   error={errors.title?.type}
