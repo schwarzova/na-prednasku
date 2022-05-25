@@ -17,7 +17,6 @@ function DatePicker(props: Props) {
   const formattedToday = today.toISOString().substr(0, 10);
   const [value, setValue] = useState(formattedToday);
   const year = today.getFullYear();
-  console.log('asdfads', props.inputProps);
 
   return (
     <>

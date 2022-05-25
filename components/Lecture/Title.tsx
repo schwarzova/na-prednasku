@@ -14,7 +14,7 @@ function Title(props: Props) {
       {props.title}
       <div className="flex">
         {props.isOnline && (
-          <span title="online událost" className="mr-1 text-sm mt-2">
+          <span title="online událost" className="mx-1 text-sm mt-2">
             🟢
           </span>
         )}

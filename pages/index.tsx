@@ -15,8 +15,12 @@ type Props = {
 function Home(props: Props) {
   const [lectures, setLectures] = useState(props.lectures);
 
+  const today = new Date();
+  const formattedToday = today.toISOString().substr(0, 10);
+
   useEffect(() => {
-    const sortedByDates = sortBy(lectures, ['date']);
+    const filterCurrent = lectures.filter((l) => l.date >= formattedToday);
+    const sortedByDates = sortBy(filterCurrent, ['date']);
     setLectures(sortBy(sortedByDates, (l) => !l.isPropagated));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);

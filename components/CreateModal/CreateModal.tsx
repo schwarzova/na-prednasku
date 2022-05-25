@@ -40,7 +40,6 @@ function CreateModal(props: Props) {
     register,
     handleSubmit,
     formState: { errors },
-    reset,
   } = useForm<FormInputs>();
 
   function selectCategory(cat: Category) {
@@ -63,7 +62,7 @@ function CreateModal(props: Props) {
     }
 
     props.onClose();
-    console.log({ data });
+    // console.log({ data });
   };
 
   return (
