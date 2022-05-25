@@ -18,7 +18,7 @@ function PageTitle() {
   const index = useRef(0);
 
   useEffect(() => {
-    const intervalID = setInterval(() => {
+    const intervalId = setInterval(() => {
       setEvent(events[index.current]);
 
       if (index.current === events.length - 1) {
@@ -29,7 +29,7 @@ function PageTitle() {
     }, 4000);
 
     return () => {
-      clearInterval(intervalID);
+      clearInterval(intervalId);
     };
   });
 

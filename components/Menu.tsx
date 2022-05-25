@@ -1,8 +1,44 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import Alert from './Alert';
 import CreateModal from './CreateModal/CreateModal';
 
 function Menu() {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isAlertOpen, setIsAlertOpen] = useState(false);
+  const [isErrorAlertOpen, setIsErrorAlertOpen] = useState(false);
+
+  useEffect(() => {
+    let timeoutId: NodeJS.Timeout | undefined = undefined;
+
+    if (isAlertOpen) {
+      timeoutId = setTimeout(() => {
+        setIsAlertOpen(false);
+      }, 4000);
+    }
+
+    if (isErrorAlertOpen) {
+      timeoutId = setTimeout(() => {
+        setIsErrorAlertOpen(false);
+      }, 4000);
+    }
+
+    return () => {
+      timeoutId && clearTimeout(timeoutId);
+    };
+  }, [isAlertOpen, isErrorAlertOpen]);
+
+  function handleCreate() {
+    setIsModalOpen(false);
+    setIsAlertOpen(true);
+  }
+
+  function handleClose() {
+    setIsModalOpen(false);
+  }
+
+  function handleError() {
+    setIsErrorAlertOpen(true);
+  }
 
   return (
     <>
@@ -15,7 +51,25 @@ function Menu() {
           🚀 <b>Vytvořit událost</b>
         </button>
       </nav>
-      {isModalOpen && <CreateModal onClose={() => setIsModalOpen(false)} />}
+      {isModalOpen && (
+        <CreateModal
+          onCreate={handleCreate}
+          onClose={handleClose}
+          onError={handleError}
+        />
+      )}
+      {isAlertOpen && (
+        <Alert
+          color="green"
+          text="Vaše událost byla vytvořena a poslána k nám na kontrolu 👍"
+        />
+      )}
+      {isErrorAlertOpen && (
+        <Alert
+          color="red"
+          text="Něco se pokazilo, Vaše událost se nepodařilo odeslat 👎"
+        />
+      )}
     </>
   );
 }

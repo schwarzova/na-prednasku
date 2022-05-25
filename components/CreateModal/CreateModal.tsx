@@ -26,13 +26,15 @@ type FormInputs = {
 
 type Props = {
   onClose: () => void;
+  onCreate: () => void;
+  onError: () => void;
 };
 
 function CreateModal(props: Props) {
   const [selectedCategories, setSelectedCategories] = useState<Category[]>([]);
   const [isAnimalError, setIsAnimalError] = useState(false);
 
-  const animal = useRef(
+  const randomAnimal = useRef(
     animalMap[Math.floor(Math.random() * animalMap.length)]
   );
 
@@ -56,12 +58,34 @@ function CreateModal(props: Props) {
   }
 
   const onSubmitHandler = (data: FormInputs) => {
-    if (data.animal !== animal.current.title) {
+    if (data.animal !== randomAnimal.current.title) {
       setIsAnimalError(true);
       return;
     }
 
-    props.onClose();
+    const { animal, ...rest } = data;
+    const sendData = {
+      ...rest,
+      categories: selectedCategories,
+      isPropagated: false,
+    };
+
+    fetch('/api/contact', {
+      method: 'POST',
+      headers: {
+        Accept: 'application/json, text/plain, */*',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(sendData),
+    }).then((res) => {
+      if (res.status === 200) {
+        props.onCreate();
+      }
+      if (res.status === 500) {
+        props.onError();
+      }
+    });
+
     // console.log({ data });
   };
 
@@ -159,8 +183,10 @@ function CreateModal(props: Props) {
                   label={
                     <>
                       Jaké zvíře{' '}
-                      <span className="text-2xl">{animal.current.icon}</span> je
-                      na obrázku?
+                      <span className="text-2xl">
+                        {randomAnimal.current.icon}
+                      </span>{' '}
+                      je na obrázku?
                     </>
                   }
                   onChange={() => setIsAnimalError(false)}
