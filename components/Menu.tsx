@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 import Alert from './Alert';
 import CreateModal from './CreateModal/CreateModal';
@@ -42,8 +43,18 @@ function Menu() {
 
   return (
     <>
-      <nav className="px-3 bg-nabifli-black-card h-14 flex items-center justify-between sm:px-10 sm:h-16">
-        <span className="text-slate-400">NÁVŠTĚV DNES | 103</span>
+      <nav className="px-3 bg-nabifli-black-card h-14 flex items-center justify-between sm:pr-10 sm:pl-8 sm:h-16">
+        <div className="flex items-center">
+          <a href="https://www.nabifli.cz/" className="mt-2 hidden sm:block">
+            <Image
+              src="/naPrednasku.svg"
+              height={50}
+              width={50}
+              alt="logo image"
+            />
+          </a>
+          <span className="ml-1 text-slate-400">NÁVŠTĚV DNES | 103</span>
+        </div>
         <button
           onClick={() => setIsModalOpen(!isModalOpen)}
           className="p-1 ring-2 ring-offset-1 ring-offset-purple-700 ring-purple-600 bg-gradient-to-r from-green-700 to-red-500 rounded-lg text-white hover:from-green-700 hover:to-green-700 sm:p-2"

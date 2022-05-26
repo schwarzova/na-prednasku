@@ -18,6 +18,7 @@ export type Category =
   | 'business'
   | 'data'
   | 'e-commerce'
+  | 'eco'
   | 'finance'
   | 'investice'
   | 'krypto'

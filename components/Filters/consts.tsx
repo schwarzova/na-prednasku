@@ -14,6 +14,7 @@ export const categoryOptions: Category[] = [
   'business',
   'data',
   'e-commerce',
+  'eco',
   'finance',
   'investice',
   'krypto',
