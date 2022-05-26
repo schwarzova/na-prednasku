@@ -44,5 +44,6 @@ export const getStaticProps = async () => {
     props: {
       lectures,
     },
+    revalidate: 3600, // rerun after 1 hour
   };
 };
