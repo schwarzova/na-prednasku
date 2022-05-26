@@ -1,6 +1,7 @@
 import { intersection } from 'lodash';
 import React, { useEffect, useState } from 'react';
 import { useDebouncedCallback } from 'use-debounce';
+import { animateScroll as scroll } from 'react-scroll';
 
 import { defaultFilter } from '../components/Filters/consts';
 import Filters from '../components/Filters/Filters';
@@ -97,6 +98,12 @@ function Main(props: Props) {
           {finalLectures.map((l) => (
             <Lecture key={l.id} lecture={l} />
           ))}
+          <button
+            onClick={() => scroll.scrollToTop()}
+            className="p-2 fixed bottom-2 right-2 text-indigo-400 text-2xl hover:text-indigo-600"
+          >
+            &#8963;
+          </button>
         </div>
       )}
     </main>
