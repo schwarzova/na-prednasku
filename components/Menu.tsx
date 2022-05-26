@@ -1,12 +1,23 @@
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
+import { getPageViews } from '../pages/api/goat-counter';
+
 import Alert from './Alert';
 import CreateModal from './CreateModal/CreateModal';
 
 function Menu() {
+  const [views, setViews] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isAlertOpen, setIsAlertOpen] = useState(false);
   const [isErrorAlertOpen, setIsErrorAlertOpen] = useState(false);
+
+  useEffect(() => {
+    async function fetchView() {
+      const viewsCount = await getPageViews();
+      setViews(viewsCount);
+    }
+    fetchView();
+  }, []);
 
   useEffect(() => {
     let timeoutId: NodeJS.Timeout | undefined = undefined;
@@ -53,7 +64,7 @@ function Menu() {
               alt="logo image"
             />
           </a>
-          <span className="ml-1 text-slate-400">NÁVŠTĚV DNES | 103</span>
+          <span className="ml-1 text-slate-400">{`NÁVŠTĚV DNES | ${views}`}</span>
         </div>
         <button
           onClick={() => setIsModalOpen(!isModalOpen)}
