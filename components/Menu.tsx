@@ -64,13 +64,16 @@ function Menu() {
               alt="logo image"
             />
           </a>
-          <span className="ml-1 text-slate-400">{`NÁVŠTĚV DNES | ${views}`}</span>
+          <span className="ml-1 text-slate-400">{`NÁVŠTĚV TÝDEN | ${views}`}</span>
         </div>
         <button
           onClick={() => setIsModalOpen(!isModalOpen)}
           className="p-1 ring-2 ring-offset-1 ring-offset-purple-700 ring-purple-600 bg-gradient-to-r from-green-700 to-red-500 rounded-lg text-white hover:from-green-700 hover:to-green-700 sm:p-2"
         >
-          🚀 <b>Vytvořit událost</b>
+          🚀{' '}
+          <b>
+            Vytvořit <span className="hidden sm:inline">událost</span>
+          </b>
         </button>
       </nav>
       {isModalOpen && (
