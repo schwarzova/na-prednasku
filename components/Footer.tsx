@@ -6,7 +6,7 @@ function Footer() {
       info@nabifli.cz
       <a
         className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-red-400 hover:from-indigo-600 hover:to-indigo-600"
-        href="https://www.instagram.com/"
+        href="https://www.instagram.com/naprednasku/"
         target="_blank"
         rel="noreferrer"
       >
