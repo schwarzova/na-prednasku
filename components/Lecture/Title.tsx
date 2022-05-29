@@ -18,7 +18,7 @@ function Title(props: Props) {
             🟢
           </span>
         )}
-        {props.isPropagated && <div title="propagovaná událost">🔥</div>}
+        {props.isPropagated && <div title="doporučená událost">🔥</div>}
       </div>
     </div>
   );
