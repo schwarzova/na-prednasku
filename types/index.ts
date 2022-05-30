@@ -17,6 +17,7 @@ export type Category =
   | 'blockchain'
   | 'business'
   | 'data'
+  | 'design'
   | 'e-commerce'
   | 'eco'
   | 'finance'
