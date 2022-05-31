@@ -5,25 +5,28 @@ export default function Document() {
   return (
     <Html>
       <Head>
+        {/* Global Site Tag (gtag.js) - Google Analytics */}
         <script
-          data-goatcounter="https://naprednasku.goatcounter.com/count"
           async
-          src="//gc.zgo.at/count.js"
-        ></script>
-        <Script
-          strategy="lazyOnload"
-          src="https://www.googletagmanager.com/gtag/js?id=G-Z70KEM3G63"
-        ></Script>
-        <Script id="google-analytics" strategy="lazyOnload">
-          {`
+          src={`https://www.googletagmanager.com/gtag/js?id=G-Z70KEM3G63`}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'G-Z70KEM3G63', {
               page_path: window.location.pathname,
             });
-                `}
-        </Script>
+          `,
+          }}
+        />
+        <script
+          data-goatcounter="https://naprednasku.goatcounter.com/count"
+          async
+          src="//gc.zgo.at/count.js"
+        ></script>
       </Head>
       <body>
         <Main />
