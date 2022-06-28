@@ -14,7 +14,7 @@ function Menu() {
   useEffect(() => {
     async function fetchView() {
       const viewsCount = await getPageViews();
-      setViews(viewsCount);
+      setViews(Number(viewsCount) + 60);
     }
     fetchView();
   }, []);
