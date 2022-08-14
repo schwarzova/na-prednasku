@@ -26,6 +26,7 @@ export const categoryOptions: Category[] = [
   'meta',
   'nft',
   'osobní rozvoj',
+  'politika',
   'programování',
   'sales',
   'tech',

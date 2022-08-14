@@ -30,6 +30,7 @@ export type Category =
   | 'meta'
   | 'nft'
   | 'osobní rozvoj'
+  | 'politika'
   | 'programování'
   | 'sales'
   | 'tech';
