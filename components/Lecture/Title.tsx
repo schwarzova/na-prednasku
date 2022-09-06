@@ -3,6 +3,7 @@ import React from 'react';
 import { Category } from '../../types';
 
 type Props = {
+  isNewsletter?: boolean;
   isOnline: boolean;
   isPropagated: boolean;
   title: string;
@@ -19,6 +20,11 @@ function Title(props: Props) {
           </span>
         )}
         {props.isPropagated && <div title="doporučená událost">🔥</div>}
+        {props.isNewsletter && (
+          <span title="newsletter" className="mx-1 text-xxl mt-2">
+            ✉️
+          </span>
+        )}
       </div>
     </div>
   );

@@ -9,6 +9,7 @@ import Lecture from '../components/Lecture/Lecture';
 import NoDataAlert from '../components/NoDataAlert';
 import PageTitle from '../components/PageTitle';
 import { FilterSettings, Lecture as LectureType } from '../types';
+import Newsletter from '../components/Newsletter/Newsletter';
 
 type Props = {
   lectures: LectureType[];
@@ -61,7 +62,6 @@ function Main(props: Props) {
   }
 
   function handleSearch(searchText: string) {
-    console.log();
     setSearchText(searchText);
     handleSearchDebounced(searchText);
   }
@@ -75,8 +75,6 @@ function Main(props: Props) {
     }
 
     const searched = props.lectures.filter((l) => {
-      console.log('title', l.title, searchText);
-      console.log(l.title.toLowerCase().search(searchText.toLowerCase()));
       return l.title.toLowerCase().search(searchText.toLowerCase()) !== -1;
     });
     setSearchLectures(searched);
@@ -95,8 +93,11 @@ function Main(props: Props) {
         <NoDataAlert />
       ) : (
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 sm:gap-6">
-          {finalLectures.map((l) => (
-            <Lecture key={l.id} lecture={l} />
+          {finalLectures.map((l, i) => (
+            <>
+              <Lecture key={l.id} lecture={l} />
+              {i === 5 && <Newsletter />}
+            </>
           ))}
           <button
             onClick={() => scroll.scrollToTop()}
