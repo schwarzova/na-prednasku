@@ -6,9 +6,13 @@ type Props = {
   price?: string;
 };
 
+export function getDate(date: string) {
+  const dateArray = date.split('-');
+  return `${dateArray[2]}.${dateArray[1]} ${dateArray[0]}`;
+}
+
 function Info(props: Props) {
-  const dateArray = props.date.split('-');
-  const date = `${dateArray[2]}.${dateArray[1]} ${dateArray[0]}`;
+  const date = getDate(props.date);
 
   function rederInfoRow(icon: string, text: string, value: string) {
     return (
