@@ -59,9 +59,10 @@ function Menu() {
           <a href="https://www.nabifli.cz/" className="mt-2 hidden sm:block">
             <Image
               src="/naPrednasku.svg"
-              height={50}
-              width={50}
               alt="logo image"
+              width={50}
+              height={50}
+              style={{ height: '50px' }}
             />
           </a>
           <span className="ml-1 text-slate-400">{`NÁVŠTĚV TÝDEN | ${views}`}</span>

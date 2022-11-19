@@ -94,10 +94,10 @@ function Main(props: Props) {
       ) : (
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 sm:gap-6">
           {finalLectures.map((l, i) => (
-            <>
-              <Lecture key={l.id} lecture={l} />
+            <React.Fragment key={l.id}>
+              <Lecture lecture={l} />
               {i === 5 && <Newsletter />}
-            </>
+            </React.Fragment>
           ))}
           <button
             onClick={() => scroll.scrollToTop()}
