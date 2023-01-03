@@ -26,6 +26,12 @@ function Home(props: Props) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [from, to]);
 
+  function getFormattedDate(date: string) {
+    const dateObject = new Date(date);
+
+    return `${dateObject.getDate()}.${dateObject.getMonth() + 1}.`;
+  }
+
   return (
     <div className="p-4 bg-nabifli-black min-h-full">
       <h1 className="text-green-500">Generator</h1>
@@ -98,6 +104,19 @@ function Home(props: Props) {
               i % 2 !== 0 || i === lectures.length - 1 ? '</div>' : ''
             }`
         )}
+      </div>
+      <div className="mt-10 text-blue-300">
+        {`🎓 Přednášky týden ${getFormattedDate(from)} - ${getFormattedDate(
+          to
+        )}`}
+        <br />
+        {lectures.map((l) => (
+          <>
+            {l.isPropagated ? '🔥' : '📍'} {getFormattedDate(l.date)} -{' '}
+            {l.title}
+            <br />
+          </>
+        ))}
       </div>
     </div>
   );
