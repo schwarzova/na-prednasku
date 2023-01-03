@@ -106,14 +106,12 @@ function Home(props: Props) {
         )}
       </div>
       <div className="mt-10 text-blue-300">
-        {`🎓 Přednášky týden ${getFormattedDate(from)} - ${getFormattedDate(
-          to
-        )}`}
+        {`Přednášky týden ${getFormattedDate(from)} - ${getFormattedDate(to)}`}
         <br />
         {lectures.map((l) => (
           <>
-            {l.isPropagated ? '🔥' : '📍'} {getFormattedDate(l.date)} -{' '}
-            {l.title}
+            {l.isPropagated ? '🔥' : '📍'}
+            {getFormattedDate(l.date)} {l.title}
             <br />
           </>
         ))}
