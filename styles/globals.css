@@ -48,3 +48,14 @@ h1 {
 ::-webkit-scrollbar-thumb:hover {
   background: #27253E;
 }
+
+.hory {
+  background:linear-gradient(0deg, rgba(212, 0, 255, 0.3), rgba(255, 255, 255, 0.3)), url(https://i.ibb.co/M1RXTk8/Maly-Princ.jpg);
+  background-size:cover;
+}
+
+.mesto {
+  background:linear-gradient(0deg, rgba(212, 0, 255, 0.3), rgba(255, 255, 255, 0.3)), url(https://i.ibb.co/pwPjjLw/866280-1.jpg);
+  background-size:auto;
+  background-position: right;
+}
