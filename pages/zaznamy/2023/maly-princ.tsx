@@ -19,7 +19,7 @@ function Page() {
             <iframe
               className="rounded-xl w-full h-full"
               src="https://www.youtube.com/embed/Nt1m60TZJ34"
-              title="YouTube video player"
+              title="Malý princ - přednáška"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
             ></iframe>

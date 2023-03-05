@@ -19,7 +19,7 @@ function Page() {
             <iframe
               className="rounded-xl w-full h-full"
               src="https://www.youtube.com/embed/UW7AuCwA_U4"
-              title="YouTube video player"
+              title="Televize a její role v marketingu"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
             ></iframe>
