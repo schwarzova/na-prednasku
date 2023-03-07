@@ -53,3 +53,9 @@ export type FilterSettings = {
   isFree: boolean;
   isOnline: boolean;
 };
+
+export type Record = {
+  title: string;
+  url: string;
+  imgUrl: string;
+};

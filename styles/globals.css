@@ -59,3 +59,8 @@ h1 {
   background-size:auto;
   background-position: right;
 }
+
+.knihovna {
+  background:linear-gradient(0deg, rgba(212, 0, 255, 0.3), rgba(255, 255, 255, 0.3)), url(https://i.ibb.co/hcvFybw/1223148.jpg);
+  background-size:cover;
+}
