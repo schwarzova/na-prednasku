@@ -9,6 +9,11 @@ import { Record } from '../../types';
 
 const records: Record[] = [
   {
+    title: 'Jak pracovat se vztekem',
+    url: 'vztek',
+    imgUrl: 'https://i.ibb.co/txn7cKR/vztek.png',
+  },
+  {
     title: 'Kovy - v kůži youtubera',
     url: 'v-kuzi-youtubera',
     imgUrl:

@@ -22,7 +22,7 @@ function Page() {
               allowFullScreen
             ></iframe>
             <div className="my-3 bg-nabifli-black-card rounded-lg drop-shadow-md text-slate-400 p-4 mb-3">
-              <h1 className="text-white font-bold">Kovy - v kůži youtubera</h1>
+              <h2 className="text-white font-bold">Kovy - v kůži youtubera</h2>
               <b>💪 V čem spočívá síla influencerů?</b>
               <p>
                 - každodenní kontakt vytváří &quot;iluzi&quot; přátelství

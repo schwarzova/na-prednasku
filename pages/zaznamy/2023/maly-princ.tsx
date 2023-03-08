@@ -22,7 +22,7 @@ function Page() {
               allowFullScreen
             ></iframe>
             <div className="my-3 bg-nabifli-black-card rounded-lg drop-shadow-md text-slate-400 p-4">
-              <h1 className="text-white font-bold">Malý princ</h1>
+              <h2 className="text-white font-bold">Malý princ</h2>
               <b>🤴 Kniha Malý princ</b>
               <p>
                 Autor jí psal v průběhu 2. světové války, bolestné období.

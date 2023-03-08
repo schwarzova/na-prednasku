@@ -22,9 +22,9 @@ function Page() {
               allowFullScreen
             ></iframe>
             <div className="my-3 bg-nabifli-black-card rounded-lg drop-shadow-md text-slate-400 p-4 mb-3">
-              <h1 className="text-white font-bold">
+              <h2 className="text-white font-bold">
                 Televize a její role v marketingu
-              </h1>
+              </h2>
               <b>⛓️ Marketingové kanály</b>
               <p>
                 <u>Mass</u> tv, pos, rádio, eventy, print, PR, sociální sítě,
