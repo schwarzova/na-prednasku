@@ -9,6 +9,11 @@ import { Record } from '../../types';
 
 const records: Record[] = [
   {
+    title: 'Koruna nebo EURO',
+    url: 'koruna-euro',
+    imgUrl: 'https://i.ibb.co/Ctx44cD/prednaska.png',
+  },
+  {
     title: 'Jak pracovat se vztekem',
     url: 'vztek',
     imgUrl: 'https://i.ibb.co/txn7cKR/vztek.png',

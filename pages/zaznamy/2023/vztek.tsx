@@ -4,6 +4,7 @@ function Page() {
   return (
     <RecordPage
       h1Title="Jak se naučit pracovat se vztekem - PŘEDNÁŠKA 6.2.2023"
+      bg="hory"
       ytUrl="https://www.youtube.com/embed/A7O7giejez8"
     >
       <h2 className="text-white font-bold">Jak pracovat se vztekem</h2>

@@ -2,9 +2,12 @@ import Footer from './Footer';
 import Head from './Head';
 import Menu from './Menu';
 
+type BgPage = 'hory' | 'mesto' | 'knihovna' | 'kancl';
+
 type Props = {
   h1Title: string;
   ytUrl: string;
+  bg: BgPage;
   children: React.ReactNode;
 };
 
@@ -13,7 +16,9 @@ function RecordPage(props: Props) {
     <>
       <Head />
       <Menu />
-      <main className="hory min-h-[calc(100%_-_64px_-_64px)] flex flex-col items-center">
+      <main
+        className={`${props.bg} min-h-[calc(100%_-_64px_-_64px)] flex flex-col items-center`}
+      >
         <div className="bg-black/60 flex-1 px-2 flex flex-col items-center sm:px-6 md:px-8 overflow-y-auto">
           <h1 className="mt-8 text-white uppercase text-2xl font-bold sm:text-3xl">
             {props.h1Title}

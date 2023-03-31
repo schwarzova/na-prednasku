@@ -55,12 +55,16 @@ h1 {
 }
 
 .mesto {
-  background:linear-gradient(0deg, rgba(212, 0, 255, 0.3), rgba(255, 255, 255, 0.3)), url(https://i.ibb.co/pwPjjLw/866280-1.jpg);
-  background-size:auto;
-  background-position: right;
+  background:linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(https://i.ibb.co/wCzT6cV/5739408.jpg);
+  background-size:cover;
 }
 
 .knihovna {
   background:linear-gradient(0deg, rgba(212, 0, 255, 0.3), rgba(255, 255, 255, 0.3)), url(https://i.ibb.co/hcvFybw/1223148.jpg);
+  background-size:cover;
+}
+
+.kancl {
+  background:linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(https://i.ibb.co/CJx2Q9c/5739262.jpg);
   background-size:cover;
 }
