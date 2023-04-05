@@ -9,6 +9,11 @@ import { Record } from '../../types';
 
 const records: Record[] = [
   {
+    title: 'Spartánské učení o strachu',
+    url: 'spartanske-uceni',
+    imgUrl: 'https://i.ibb.co/vVfFb2R/prednaska.png',
+  },
+  {
     title: 'Jak vytvořit unicorna',
     url: 'unicorn',
     imgUrl: 'https://i.ibb.co/HYxxszd/unicorn.png',
