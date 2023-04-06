@@ -9,6 +9,11 @@ import { Record } from '../../types';
 
 const records: Record[] = [
   {
+    title: 'Na penězích záleží: jak úspěšně řídit rodinný rozpočet',
+    url: 'rozpocet',
+    imgUrl: 'https://i.ibb.co/84fSxdQ/rozpocet.png',
+  },
+  {
     title: 'Spartánské učení o strachu',
     url: 'spartanske-uceni',
     imgUrl: 'https://i.ibb.co/vVfFb2R/prednaska.png',
