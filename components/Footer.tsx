@@ -3,7 +3,7 @@ import React from 'react';
 function Footer() {
   return (
     <footer className="px-3 py-5 bg-neutral-900 text-slate-400 sm:px-10 flex flex-col justify-between sm:flex-row">
-      info@nabifli.cz
+      {/* info@nabifli.cz */}
       <div className="flex">
         <a
           className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-600 hover:to-blue-600"
@@ -31,7 +31,7 @@ function Footer() {
         </a>
       </div>
       <span className="text-sm mt-5 sm:mt-0">
-        made by{' '}
+        {/* made by{' '}
         <a
           className="text-white"
           href="https://www.venetia.cz/"
@@ -39,7 +39,7 @@ function Footer() {
           rel="noreferrer"
         >
           Venetia Production
-        </a>
+        </a> */}
       </span>
     </footer>
   );

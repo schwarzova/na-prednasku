@@ -61,16 +61,16 @@ function Menu(props: Props) {
     <>
       <nav className="px-3 bg-nabifli-black-card h-14 flex items-center justify-between sm:pr-10 sm:pl-8 sm:h-16">
         <div className="flex items-center hidden sm:flex">
-          <a href="https://www.nabifli.cz/" className="mt-2 hidden sm:block">
+          <a href="https://www.naprednasku.cz/" className="hidden sm:block">
             <Image
-              src="/naPrednasku.svg"
+              src="/naPrednaskuIco.png"
               alt="logo image"
-              width={50}
-              height={50}
-              style={{ height: '50px' }}
+              width={30}
+              height={30}
+              style={{ height: '30px' }}
             />
           </a>
-          <span className="ml-1 text-slate-400">{`NÁVŠTĚV TÝDEN | ${views}`}</span>
+          <span className="ml-2 text-slate-400">{`NÁVŠTĚV TÝDEN | ${views}`}</span>
         </div>
         {props.showHome ? (
           <Link
