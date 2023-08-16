@@ -2,6 +2,7 @@ import { intersection } from 'lodash';
 import React, { useEffect, useState } from 'react';
 import { useDebouncedCallback } from 'use-debounce';
 import { animateScroll as scroll } from 'react-scroll';
+import Image from 'next/image';
 
 import { defaultFilter } from '../components/Filters/consts';
 import Filters from '../components/Filters/Filters';
@@ -89,6 +90,17 @@ function Main(props: Props) {
         onSearchChange={handleSearch}
         searchText={searchText}
       />
+      <div className="flex justify-center mb-8 hover:opacity-90">
+        <a href="https://www.nabifli.cz/" target="_blank" rel="noreferrer">
+          <Image
+            src="/nabifliBanner.png"
+            alt="bart"
+            width="1000"
+            height="140"
+            style={{ borderRadius: '12px' }}
+          />
+        </a>
+      </div>
       {finalLectures.length === 0 ? (
         <NoDataAlert />
       ) : (
