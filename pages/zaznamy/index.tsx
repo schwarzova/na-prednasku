@@ -9,6 +9,72 @@ import { Record } from '../../types';
 
 const records: Record[] = [
   {
+    title: 'Tao - přednáška',
+    url: 'tao',
+    imgUrl: 'https://i.ibb.co/X2QJQrc/tao.png',
+  },
+  {
+    title: 'Jak umělá inteligence změní trh práce a jak toho využít?',
+    url: 'ai-trh',
+    imgUrl: 'https://i.ibb.co/WtVF3Ww/aitrh.png',
+  },
+  {
+    title: 'Duchové a mimozemšťani - Co mají společného?',
+    url: 'duchove-mimozemstani',
+    imgUrl: 'https://i.ibb.co/28pYxFH/duchove.png',
+  },
+  {
+    title: 'Figma do hloubky',
+    url: 'figma',
+    imgUrl: 'https://i.ibb.co/nbxc1d9/figma.png',
+  },
+  {
+    title: 'Rozhovor s Dominikem Ženatým o investování do nemovitostí',
+    url: 'nemovitosti',
+    imgUrl: 'https://i.ibb.co/Dzd2Rq9/investnemovitosti.png',
+  },
+  {
+    title: 'Claire Kroulík Klingenberg: Příběhy profesionálních podvodníků',
+    url: 'podvodnici',
+    imgUrl: 'https://i.ibb.co/hZrVfvj/podvodnici.png',
+  },
+  {
+    title: 'Techniky komunikace na sociálních sítích',
+    url: 'komunikace-socialni-site',
+    imgUrl: 'https://i.ibb.co/jwH3dvq/komunikacesocial.png',
+  },
+  {
+    title: 'Alfons Mucha - umělec a filozof',
+    url: 'mucha',
+    imgUrl: 'https://i.ibb.co/yy1Nw7M/mucha.png',
+  },
+  {
+    title: 'Cloud a AI - jak s nimi bezpečně pracovat?',
+    url: 'cloud-ai',
+    imgUrl: 'https://i.ibb.co/YpjdPFD/cloudai.png',
+  },
+  {
+    title: 'Debata N: Pořádek v hlavě aneb kritické myšlení pro každý den',
+    url: 'poradek-hlava',
+    imgUrl: 'https://i.ibb.co/T43MmY3/poradek-hlava.png',
+  },
+  {
+    title: 'Artificial Intelligence - konference',
+    url: 'ai-conf',
+    imgUrl: 'https://i.ibb.co/vJdPjWx/conference-ai.png',
+  },
+  {
+    title:
+      'Block 23 - konference o posledních trendech blockchainové technologie',
+    url: 'block-23',
+    imgUrl: 'https://i.ibb.co/ZSBRfwz/blockchain-conf.png',
+  },
+  {
+    title: 'Mýty o domácím násilí',
+    url: 'myty-domaci-nasili',
+    imgUrl: 'https://i.ibb.co/tZ3PHpj/myty-o-nasili.png',
+  },
+  {
     title: 'Na penězích záleží: jak úspěšně řídit rodinný rozpočet',
     url: 'rozpocet',
     imgUrl: 'https://i.ibb.co/84fSxdQ/rozpocet.png',
