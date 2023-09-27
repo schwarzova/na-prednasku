@@ -9,6 +9,16 @@ import { Record } from '../../types';
 
 const records: Record[] = [
   {
+    title: 'Fromm - Umění milovat',
+    url: 'fromm',
+    imgUrl: 'https://i.ibb.co/rGxSB9L/fromm.png',
+  },
+  {
+    title: 'Echo z Knihovny: Cenzura v době svobody',
+    url: 'cenzura',
+    imgUrl: 'https://i.ibb.co/W5ZDtm4/svoboda.png',
+  },
+  {
     title: 'Tao - přednáška',
     url: 'tao',
     imgUrl: 'https://i.ibb.co/X2QJQrc/tao.png',
