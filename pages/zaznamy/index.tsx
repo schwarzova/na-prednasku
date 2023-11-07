@@ -9,6 +9,16 @@ import { Record } from '../../types';
 
 const records: Record[] = [
   {
+    title: 'Data jako palivo pro AI',
+    url: 'data-jako-palivo',
+    imgUrl: 'https://i.ibb.co/R9YqVyf/data-Jako-Palivo.png',
+  },
+  {
+    title: 'Dana Bérová: Co dělají úspěšné firmy jinak než ty ostatní?',
+    url: 'dana-berova',
+    imgUrl: 'https://i.ibb.co/znq8pGX/dana-Berova.png',
+  },
+  {
     title: 'Fromm - Umění milovat',
     url: 'fromm',
     imgUrl: 'https://i.ibb.co/rGxSB9L/fromm.png',
