@@ -9,6 +9,11 @@ import { Record } from '../../types';
 
 const records: Record[] = [
   {
+    title: 'Sokrates a probuzení duše',
+    url: 'sokrates-duse',
+    imgUrl: 'https://i.ibb.co/gTshPDS/sokrates.png',
+  },
+  {
     title: 'Data jako palivo pro AI',
     url: 'data-jako-palivo',
     imgUrl: 'https://i.ibb.co/R9YqVyf/data-Jako-Palivo.png',
