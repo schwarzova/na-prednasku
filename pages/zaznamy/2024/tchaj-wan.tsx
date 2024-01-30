@@ -7,17 +7,17 @@ function Page() {
     <>
       <Head />
       <Menu />
-      <main className="hory min-h-[calc(100%_-_64px_-_64px)] flex flex-col items-center">
+      <main className="kancl min-h-[calc(100%_-_64px_-_64px)] flex flex-col items-center">
         <div className="bg-black/60 flex-1 px-2 flex flex-col items-center sm:px-6 md:px-8 overflow-y-auto">
           <h1 className="mt-8 text-white uppercase text-2xl font-bold sm:text-3xl">
-            Sokrates a probuzení duše
-            <br /> přednáška 13.11.2023
+            Debata N: Zvolil si Tchaj-wan Čínu?
+            <br /> přednáška 23.1.2024
           </h1>
           <div className="mt-6 rounded-xl drop-shadow relative w-[350px] h-[415px] sm:w-[540px] md:w-[740px]">
             <iframe
               className="rounded-xl w-full h-full"
-              src="https://www.youtube.com/embed/buKSA9GZH6Q"
-              title="Sokrates a probuzení duše"
+              src="https://www.youtube.com/embed/5URkika6n_4"
+              title="Debata N: Zvolil si Tchaj-wan Čínu?"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
             ></iframe>
