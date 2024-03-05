@@ -9,14 +9,24 @@ import { Record } from '../../types';
 
 const records: Record[] = [
   {
-    title: 'Namočíme vás do DIPu',
-    url: 'do-dipu',
-    imgUrl: 'https://i.ibb.co/h13LZ8G/prednaska-1.png',
+    title: 'Novinky v AI a co nás čeká v roce 2024',
+    url: 'ai-2024',
+    imgUrl: 'https://i.ibb.co/G2W4kkm/ai2024.png',
+  },
+  {
+    title: 'Genealogie pro každého - Lán, tolar a hladomor',
+    url: 'lan-tolar-hladomor',
+    imgUrl: 'https://i.ibb.co/bQ1ydk3/lan-Tolar-Hladomor.png',
   },
   {
     title: 'Debata N: Zvolil si Tchaj-wan Čínu?',
     url: 'tchaj-wan',
     imgUrl: 'https://i.ibb.co/Wc6r13v/prednaska.png',
+  },
+  {
+    title: 'Namočíme vás do DIPu',
+    url: 'do-dipu',
+    imgUrl: 'https://i.ibb.co/h13LZ8G/prednaska-1.png',
   },
 ];
 
