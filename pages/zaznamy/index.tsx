@@ -9,6 +9,21 @@ import { Record } from '../../types';
 
 const records: Record[] = [
   {
+    title: 'Karma',
+    url: 'karma',
+    imgUrl: 'https://i.ibb.co/M23Ksnj/3.png',
+  },
+  {
+    title: 'Jak vybudovat firmu z nuly na 2,5 miliardy?',
+    url: 'budovani-firmy',
+    imgUrl: 'https://i.ibb.co/xSSgdB9/1.png',
+  },
+  {
+    title: 'Krásy teorie relativity',
+    url: 'relativita',
+    imgUrl: 'https://i.ibb.co/GxSVRL6/2.png',
+  },
+  {
     title: 'Novinky v AI a co nás čeká v roce 2024',
     url: 'ai-2024',
     imgUrl: 'https://i.ibb.co/G2W4kkm/ai2024.png',
