@@ -21,50 +21,70 @@ a {
 }
 
 h1 {
-  font-family: 'Geneva', sans-serif; 
+  font-family: 'Geneva', sans-serif;
 }
 
 #__next {
   height: 100%;
 }
 
-/* width */
+/* Width */
 ::-webkit-scrollbar {
   width: 7px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #1E202F;
-  border-left: 1px solid #27253E;
+  background: #1e202f;
+  border-left: 1px solid #27253e;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #27253E;
+  background: #27253e;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #27253E;
+  background: #27253e;
 }
 
 .hory {
-  background:linear-gradient(0deg, rgba(212, 0, 255, 0.3), rgba(255, 255, 255, 0.3)), url(https://i.ibb.co/M1RXTk8/Maly-Princ.jpg);
-  background-size:cover;
+  background: linear-gradient(
+      0deg,
+      rgba(212, 0, 255, 0.3),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url(https://i.ibb.co/M1RXTk8/Maly-Princ.jpg);
+  background-size: cover;
 }
 
 .mesto {
-  background:linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(https://i.ibb.co/wCzT6cV/5739408.jpg);
-  background-size:cover;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url(https://i.ibb.co/wCzT6cV/5739408.jpg);
+  background-size: cover;
 }
 
 .knihovna {
-  background:linear-gradient(0deg, rgba(212, 0, 255, 0.3), rgba(255, 255, 255, 0.3)), url(https://i.ibb.co/hcvFybw/1223148.jpg);
-  background-size:cover;
+  background: linear-gradient(
+      0deg,
+      rgba(212, 0, 255, 0.3),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url(https://i.ibb.co/hcvFybw/1223148.jpg);
+  background-size: cover;
 }
 
 .kancl {
-  background:linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(https://i.ibb.co/CJx2Q9c/5739262.jpg);
-  background-size:cover;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url(https://i.ibb.co/CJx2Q9c/5739262.jpg);
+  background-size: cover;
 }
